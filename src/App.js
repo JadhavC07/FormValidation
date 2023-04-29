@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div>
       
-      <Validation  chandan="Cjcadasdsa" jadhav="Cjsczdczdsa62265"/>
+      <Validation  chandan="CJ" jadhav="CJ"/>
     </div>
   )
 }

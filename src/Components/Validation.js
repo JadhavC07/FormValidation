@@ -1,6 +1,16 @@
+import { useState } from "react";
 import "./Validation.css"
 
 const Validation = (props) => {
+
+  const [name, setName] = useState("chandan-jadhav")
+const setnameCJ =()=>{
+  setName("CJ First Name")
+}
+const setnamecj =()=>{
+  setName("CJ Last Name")
+}
+
   return (
     <div className="container-sm my-5 box">
       <div class="row">
@@ -8,7 +18,7 @@ const Validation = (props) => {
           <input
             type="text"
             class="form-control"
-            placeholder={props.chandan}
+            placeholder={name}
             aria-label="First name"
           />
         </div>
@@ -40,13 +50,13 @@ const Validation = (props) => {
           className="form-control"
           id="exampleFormControlTextarea1"
           rows="3"
-        ></textarea>
+        >{name}</textarea>
       </div>
       <div className="mb-3 d-flex justify-content-between size">
-        <button type="button" class="btn btn-primary">
+        <button type="button" class="btn btn-primary" onClick={setnameCJ}>
           Primary
         </button>
-        <button type="button" class="btn btn-secondary">
+        <button type="button" class="btn btn-secondary" onClick={setnamecj}>
           Secondary
         </button>
       </div>
