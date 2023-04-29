@@ -1,6 +1,19 @@
 import "./Validation.css"
 
 const Validation = () => {
+
+ const education=['BA',"BCA","BCom","BBA","BEd","Polly","ME","PHD"]
+
+ const edu=education.map((ele)=>{
+
+return(
+  <option>{ele}</option>
+
+)
+
+ })
+
+
   return (
     <div className="container-sm my-5 box">
       <div class="row">
@@ -32,6 +45,16 @@ const Validation = () => {
           placeholder="name@example.com"
         />
       </div>
+
+      <div className="edu"><label>Education     </label>
+              <select>
+
+                {edu}
+                         
+
+              </select>
+       </div>
+       <br></br>
       <div className="mb-3">
         <label htmlFor="exampleFormControlTextarea1" className="form-label">
           Example textarea
@@ -42,6 +65,10 @@ const Validation = () => {
           rows="3"
         ></textarea>
       </div>
+      
+
+
+
       <div className="mb-3 d-flex justify-content-between size">
         <button type="button" class="btn btn-primary">
           Primary
