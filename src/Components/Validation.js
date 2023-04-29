@@ -1,4 +1,5 @@
-import { useState } from "react";
+import React,{useState} from 'react'
+
 import "./Validation.css"
 
 const Validation = (props) => {
@@ -42,6 +43,12 @@ const setnamecj =()=>{
           placeholder="name@example.com"
         />
       </div>
+
+      <div className="edu">
+        <label>Education </label>
+        <select></select>
+      </div>
+      <br></br>
       <div className="mb-3">
         <label htmlFor="exampleFormControlTextarea1" className="form-label">
           Example textarea
@@ -52,6 +59,7 @@ const setnamecj =()=>{
           rows="3"
         >{name}</textarea>
       </div>
+
       <div className="mb-3 d-flex justify-content-between size">
         <button type="button" class="btn btn-primary" onClick={setnameCJ}>
           Primary
