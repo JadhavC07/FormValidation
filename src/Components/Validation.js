@@ -1,5 +1,6 @@
 import "./Validation.css";
 
+
 const Validation = () => {
   const education = ["BA", "BCA", "BCom", "BBA", "BEd", "Polly", "ME", "PHD"];
 
@@ -9,6 +10,7 @@ const Validation = () => {
     return <option>{ele}</option>;
   });
 
+const Validation = (props) => {
   return (
     <div className="container-sm my-5 box">
       <div class="row">
@@ -16,7 +18,7 @@ const Validation = () => {
           <input
             type="text"
             class="form-control"
-            placeholder="First name"
+            placeholder={props.chandan}
             aria-label="First name"
           />
         </div>
@@ -24,7 +26,7 @@ const Validation = () => {
           <input
             type="text"
             class="form-control"
-            placeholder="Last name"
+            placeholder={props.jadhav}
             aria-label="Last name"
           />
         </div>
