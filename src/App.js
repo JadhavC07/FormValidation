@@ -5,8 +5,8 @@ import Validation from './Components/Validation.js';
 const App = () => {
   return (
     <div>
-      chandan mera naam
-      <Validation />
+      
+      <Validation  chandan="Chandan" jadhav="Jadhav"/>
     </div>
   )
 }
