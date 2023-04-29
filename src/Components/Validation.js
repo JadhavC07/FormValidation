@@ -4,6 +4,8 @@ const Validation = () => {
 
  const education=['BA',"BCA","BCom","BBA","BEd","Polly","ME","PHD"]
 
+ // array of  education 
+
  const edu=education.map((ele)=>{
 
 return(
