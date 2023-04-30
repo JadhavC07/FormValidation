@@ -1,24 +1,19 @@
 import "./Validation.css";
 
-
-
-  
-
 const Validation = (props) => {
-
-const education = ["BA", "BCA", "BCom", "BBA", "BEd", "Polly", "ME", "PHD"];
+  const education = ["BA", "BCA", "BCom", "BBA", "BEd", "Polly", "ME", "PHD"];
 
   // array of  education
 
   const edu = education.map((ele) => {
-    return <option>{ele}</option>;
+    return <option className="form-select">{ele}</option>;
   });
 
   return (
     <div className="container-sm my-5 box">
       <div class="row">
         <div class="col">
-          <input 
+          <input
             type="text"
             class="form-control"
             placeholder="First Name"
@@ -45,7 +40,46 @@ const education = ["BA", "BCA", "BCom", "BBA", "BEd", "Polly", "ME", "PHD"];
           placeholder="name@example.com"
         />
       </div>
+      <div className="Gender d-flex flex-row justify-content-evenly">
+        <div className="male">
+          <input
+            type="radio"
+            className="btn-check"
+            name="options-outlined"
+            id="success-outlined"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-success" for="success-outlined">
+            Male
+          </label>
+        </div>
 
+        <div className="female">
+          <input
+            type="radio"
+            className="btn-check"
+            name="options-outlined"
+            id="danger-outlined"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-danger" for="danger-outlined">
+            Female
+          </label>
+        </div>
+        <div className="other">
+          <input
+            type="radio"
+            class="btn-check"
+            id="btn-check-2-outlined"
+            name="options-outlined"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-secondary" for="btn-check-2-outlined">
+            Other
+          </label>
+        </div>
+        <br></br>
+      </div>
       <div className="edu">
         <label>Education </label>
         <select>{edu}</select>

@@ -1,12 +1,15 @@
-.box{
-    width: 600px;
+.box {
+  width: 600px;
 }
 
-.size{
-    margin: 0 180px;
+.size {
+  margin: 0 180px;
 }
 
-.edu{
+.edu {
+  margin-top: 15px;
+}
 
-    margin-top: 15px;
+.Gender {
+  width: 50%;
 }
