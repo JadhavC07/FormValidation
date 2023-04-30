@@ -9,8 +9,7 @@ const App = () => {
       <p> hello</p>
       <Validation />
       
-      <Validation  chandan="Cjcadasdsa" jadhav="Cjsczdczdsa62265"/>
-
+      <Validation  chandan="Cj" jadhav="Cj"/>
     </div>
   )
 }
