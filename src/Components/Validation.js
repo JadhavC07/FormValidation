@@ -18,10 +18,10 @@ const education = ["BA", "BCA", "BCom", "BBA", "BEd", "Polly", "ME", "PHD"];
     <div className="container-sm my-5 box">
       <div class="row">
         <div class="col">
-          <input
+          <input 
             type="text"
             class="form-control"
-            placeholder={props.chandan}
+            placeholder="First Name"
             aria-label="First name"
           />
         </div>
@@ -29,7 +29,7 @@ const education = ["BA", "BCA", "BCom", "BBA", "BEd", "Polly", "ME", "PHD"];
           <input
             type="text"
             class="form-control"
-            placeholder={props.jadhav}
+            placeholder="Last Name"
             aria-label="Last name"
           />
         </div>
@@ -64,10 +64,10 @@ const education = ["BA", "BCA", "BCom", "BBA", "BEd", "Polly", "ME", "PHD"];
 
       <div className="mb-3 d-flex justify-content-between size">
         <button type="button" class="btn btn-primary">
-          Primary
+          Submit
         </button>
         <button type="button" class="btn btn-secondary">
-          Secondary
+          Cancel
         </button>
       </div>
     </div>
