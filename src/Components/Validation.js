@@ -1,8 +1,12 @@
 import "./Validation.css";
 
 
-const Validation = () => {
-  const education = ["BA", "BCA", "BCom", "BBA", "BEd", "Polly", "ME", "PHD"];
+
+  
+
+const Validation = (props) => {
+
+const education = ["BA", "BCA", "BCom", "BBA", "BEd", "Polly", "ME", "PHD"];
 
   // array of  education
 
@@ -10,7 +14,6 @@ const Validation = () => {
     return <option>{ele}</option>;
   });
 
-const Validation = (props) => {
   return (
     <div className="container-sm my-5 box">
       <div class="row">
