@@ -6,24 +6,28 @@ const Validation = (props) => {
   // array of  education
 
   const edu = education.map((ele) => {
-    return <option className="form-select">{ele}</option>;
+    return (
+      <option className="form-select" key={ele}>
+        {ele}
+      </option>
+    );
   });
 
   return (
     <div className="container-sm my-5 box">
-      <div class="row">
-        <div class="col">
+      <div className="row">
+        <div className="col">
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             placeholder="First Name"
             aria-label="First name"
           />
         </div>
-        <div class="col">
+        <div className="col">
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             placeholder="Last Name"
             aria-label="Last name"
           />
@@ -47,9 +51,9 @@ const Validation = (props) => {
             className="btn-check"
             name="options-outlined"
             id="success-outlined"
-            autocomplete="off"
+            autoComplete="off"
           />
-          <label class="btn btn-outline-success" for="success-outlined">
+          <label className="btn btn-outline-success" htmlFor="success-outlined">
             Male
           </label>
         </div>
@@ -60,21 +64,24 @@ const Validation = (props) => {
             className="btn-check"
             name="options-outlined"
             id="danger-outlined"
-            autocomplete="off"
+            autoComplete="off"
           />
-          <label class="btn btn-outline-danger" for="danger-outlined">
+          <label className="btn btn-outline-danger" htmlFor="danger-outlined">
             Female
           </label>
         </div>
         <div className="other">
           <input
             type="radio"
-            class="btn-check"
+            className="btn-check"
             id="btn-check-2-outlined"
             name="options-outlined"
-            autocomplete="off"
+            autoComplete="off"
           />
-          <label class="btn btn-outline-secondary" for="btn-check-2-outlined">
+          <label
+            className="btn btn-outline-secondary"
+            htmlFor="btn-check-2-outlined"
+          >
             Other
           </label>
         </div>
@@ -97,10 +104,10 @@ const Validation = (props) => {
       </div>
 
       <div className="mb-3 d-flex justify-content-between size">
-        <button type="button" class="btn btn-primary">
+        <button type="button" className="btn btn-primary">
           Submit
         </button>
-        <button type="button" class="btn btn-secondary">
+        <button type="button" className="btn btn-secondary">
           Cancel
         </button>
       </div>
